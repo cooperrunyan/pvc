@@ -6,3 +6,5 @@ services:
       dockerfile: ./dockerfile
       context: .
     env_file: ./.env
+    environment:
+      PORT: 5000
