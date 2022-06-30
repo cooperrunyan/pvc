@@ -9,8 +9,11 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node ./build/index.js",
+    "dev": "nodemon"
   },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^18.0.0",
     "ts-node": "^10.8.1",
