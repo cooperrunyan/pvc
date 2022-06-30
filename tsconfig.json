@@ -54,7 +54,7 @@
     "strictNullChecks": true, // Make sure null is not equal to undefined
     "strictPropertyInitialization": true, // Make sure a property that isn't marked as optional gets initialized
     "target": "esnext", // Target ECMAScript version
-    "types": ["node"], // Lib files for the compiler
+    "types": ["node", "jest"], // Lib files for the compiler
     "useUnknownInCatchVariables": true, // catch (err) {} is an "unknown" type instead of "any"
     "useDefineForClassFields": true // Use more modern ECMA syntax
   },
