@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json.schemastore.org/tsconfig", // Specify the schema for type checking and intellisense
+
+  "compilerOptions": {
+    "rootDir": "./src", // Where are .ts files stored
+    "outDir": "./build", // Where will outputted files be stored
+
+    "allowJs": true, // Allow the usage of javascript files
+    "allowSyntheticDefaultImports": true, // Import a default CommonJS export as an ES6 import
+    "allowUnreachableCode": false, // Throw an error if code can never be reached
+    "alwaysStrict": true, // Always write "use strict" in javascript files
+    "baseUrl": ".", // Make sure the base url is the current working directory
+    "checkJs": true, // Run type checking on javascript files
+    "diagnostics": false, // Log nerd stats
+    "disableReferencedProjectLoad": true, // Disable preloading of types for large multi-projects
+    "disableSizeLimit": false, // Remove the 20mb cap on total JS size
+    "disableSolutionSearching": false, // Opt out of finding solutions in multiple projects
+    "disableSourceOfProjectReferenceRedirect": true, // Disable preferring source files instead of declaration files
+    "downlevelIteration": true, // Use more performant iteration
+    "esModuleInterop": true, // Allows support for CommonJS and ES Modules to interact
+    "emitDecoratorMetadata": true, // Write metadata about decorators in source files
+    "experimentalDecorators": true, // Use experimental decorators "@Whatever"
+    "exactOptionalPropertyTypes": true, // Differentiate between an optional type and undefined
+    "forceConsistentCasingInFileNames": true, // Force consistent casing in file names
+    "lib": ["Dom", "ESNext"], // Certain type libraries to include
+    "importHelpers": true, // Import helpers once per project instead of per-file
+    "importsNotUsedAsValues": "preserve", // Determines what method of type importing to use
+    "isolatedModules": true, // Make sure each file has an "import" or "export"
+    "jsx": "preserve", // Determines outputted React function component syntax
+    "jsxFactory": "React.createElement", // What method is called to create an element
+    "jsxFragmentFactory": "React.Fragment", // What method is called to create a fragment
+    "keyofStringsOnly": false, // Force keyof operator to only return strings
+    "listEmittedFiles": false, // Log all written files
+    "listFiles": false, // Log all files
+    "listFilesOnly": false, // Only list files instead of compiling
+    "maxNodeModuleJsDepth": 0, // Depth to type check node modules
+    "module": "esnext", // Determines what type of import system to use ("require", "import", etc.)
+    "moduleResolution": "node", // Specifies how to resolve modules
+    "noUncheckedIndexedAccess": true, // Disable index access without undefined possibility
+    "noFallthroughCasesInSwitch": true, // Enable error reporting for fallthrough cases in switch statements
+    "noImplicitAny": true, // Don't allow a token to be implicitly any
+    "noImplicitOverride": true, // Specifically write the word "override" before class properties if it overrides
+    "noImplicitReturns": true, // Always have a code path that returns
+    "noImplicitThis": true, // Don't allow "this" to implicitly be any
+    "noUnusedLocals": false, // No error when local variables aren't used
+    "noUnusedParameters": false, // No error when function parameters aren't used
+    "noErrorTruncation": true, // Don't shorten types in error messages
+    "removeComments": true, // Delete comments from output files
+    "resolveJsonModule": true, // Import .json files
+    "skipLibCheck": false, // Skip type checks on lib files
+    "strict": true, // All strict type checkings
+    "strictBindCallApply": true, // Check that the arguments for bind, call, and apply methods match the original function.
+    "strictFunctionTypes": true, // Make sure params and return types are compatible
+    "strictNullChecks": true, // Make sure null is not equal to undefined
+    "strictPropertyInitialization": true, // Make sure a property that isn't marked as optional gets initialized
+    "target": "esnext", // Target ECMAScript version
+    "types": ["node"], // Lib files for the compiler
+    "useUnknownInCatchVariables": true, // catch (err) {} is an "unknown" type instead of "any"
+    "useDefineForClassFields": true // Use more modern ECMA syntax
+  },
+
+  "include": ["./src"], // Files to include
+  "exclude": ["./build", "node_modules"] // Files to exclude
+}
