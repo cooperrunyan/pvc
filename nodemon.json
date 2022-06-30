@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json.schemastore.org/nodemon.json",
+  "ignore": ["./build"],
+  "watch": ["./**/*.ts", "./**/*.json", "./src"],
+  "ext": "*",
+
+  "exec": "node --loader ts-node/esm ./src/index.ts"
+}
