@@ -1,6 +1,6 @@
 import 'jest';
 import request from 'supertest';
-import { app } from './app';
+import { app } from './app.js';
 
 describe('Server', () => {
   it('Runs the server', async () => {
