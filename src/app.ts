@@ -1,5 +1,5 @@
 import express from 'express';
-import { pvc } from './webhooks/package-version-check/route.js';
+import { pvc } from './webhooks/package-version-check/route';
 
 export const app = express();
 
