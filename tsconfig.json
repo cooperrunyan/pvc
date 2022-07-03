@@ -11,14 +11,8 @@
     "alwaysStrict": true, // Always write "use strict" in javascript files
     "baseUrl": ".", // Make sure the base url is the current working directory
     "checkJs": true, // Run type checking on javascript files
-    "diagnostics": false, // Log nerd stats
-    "disableReferencedProjectLoad": true, // Disable preloading of types for large multi-projects
-    "disableSizeLimit": false, // Remove the 20mb cap on total JS size
-    "disableSolutionSearching": false, // Opt out of finding solutions in multiple projects
-    "disableSourceOfProjectReferenceRedirect": true, // Disable preferring source files instead of declaration files
     "downlevelIteration": true, // Use more performant iteration
     "esModuleInterop": true, // Allows support for CommonJS and ES Modules to interact
-    "emitDecoratorMetadata": true, // Write metadata about decorators in source files
     "experimentalDecorators": true, // Use experimental decorators "@Whatever"
     "exactOptionalPropertyTypes": true, // Differentiate between an optional type and undefined
     "forceConsistentCasingInFileNames": true, // Force consistent casing in file names
@@ -28,19 +22,11 @@
     "isolatedModules": true, // Make sure each file has an "import" or "export"
     "jsx": "preserve", // Determines outputted React function component syntax
     "jsxFactory": "React.createElement", // What method is called to create an element
-    "jsxFragmentFactory": "React.Fragment", // What method is called to create a fragment
-    "keyofStringsOnly": false, // Force keyof operator to only return strings
-    "listEmittedFiles": false, // Log all written files
-    "listFiles": false, // Log all files
-    "listFilesOnly": false, // Only list files instead of compiling
-    "maxNodeModuleJsDepth": 0, // Depth to type check node modules
-    "module": "esnext", // Determines what type of import system to use ("require", "import", etc.)
-    "moduleResolution": "node", // Specifies how to resolve modules
+    "moduleResolution": "nodenext", // Specifies how to resolve modules
     "noUncheckedIndexedAccess": true, // Disable index access without undefined possibility
     "noFallthroughCasesInSwitch": true, // Enable error reporting for fallthrough cases in switch statements
     "noImplicitAny": true, // Don't allow a token to be implicitly any
     "noImplicitOverride": true, // Specifically write the word "override" before class properties if it overrides
-    "noImplicitReturns": true, // Always have a code path that returns
     "noImplicitThis": true, // Don't allow "this" to implicitly be any
     "noUnusedLocals": false, // No error when local variables aren't used
     "noUnusedParameters": false, // No error when function parameters aren't used
