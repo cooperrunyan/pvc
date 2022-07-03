@@ -3,7 +3,7 @@ import 'jest';
 import express from 'express';
 import request from 'supertest';
 
-import { pvc } from './package-version-check';
+import { pvc } from './route';
 
 describe('Package Version Check', () => {
   const app = request(express().use('/', pvc));
