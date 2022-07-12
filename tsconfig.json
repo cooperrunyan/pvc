@@ -5,6 +5,7 @@
     "rootDir": "./src", // Where are .ts files stored
     "outDir": "./build", // Where will outputted files be stored
 
+    "module": "commonjs",
     "allowJs": true, // Allow the usage of javascript files
     "allowSyntheticDefaultImports": true, // Import a default CommonJS export as an ES6 import
     "allowUnreachableCode": false, // Throw an error if code can never be reached
